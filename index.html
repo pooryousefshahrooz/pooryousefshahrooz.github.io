@@ -4,11 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shahrooz Pouryousef</title>
-  <meta name="description" content="Academic homepage of Shahrooz Pouryousef — distributed quantum computing, quantum networking, and AI systems." />
+  <meta name="description" content="Shahrooz Pouryousef — networking, data-center networking, AI × Networking for distributed training; plus distributed quantum computing and quantum networking." />
   <style>
-    :root{
-      --bg:#ffffff; --fg:#111111; --muted:#6b7280; --link:#2563eb; --chip:#f3f4f6; --card:#fafafa; --border:#e5e7eb;
-    }
+    :root{ --bg:#ffffff; --fg:#111111; --muted:#6b7280; --link:#2563eb; --chip:#f3f4f6; --card:#fafafa; --border:#e5e7eb; }
     @media (prefers-color-scheme: dark) {
       :root{ --bg:#0b0b10; --fg:#e5e7eb; --muted:#9aa3b2; --link:#60a5fa; --chip:#171821; --card:#0f1117; --border:#1f2430; }
     }
@@ -30,33 +28,32 @@
     section:last-of-type{border-bottom:none}
     h2{font-size:1.25rem;margin:0 0 10px}
     ul{padding-left:18px;margin:0}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .grid{display:grid;gap:10px}
     .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px}
-    .news li{margin-bottom:8px}
     .small{font-size:.95rem;color:var(--muted)}
     .muted{color:var(--muted)}
     .btn{display:inline-block;border:1px solid var(--border);padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--fg);background:var(--card)}
     .nowrap{white-space:nowrap}
     footer{padding:24px 0;color:var(--muted)}
-    @media (max-width:700px){header{grid-template-columns:80px 1fr} img.portrait{width:80px;height:80px} .two-col{grid-template-columns:1fr} }
+    @media (max-width:700px){header{grid-template-columns:80px 1fr} img.portrait{width:80px;height:80px}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <!-- Replace src with your headshot -->
       <img class="portrait" src="shahrooz_qce.jpeg" alt="Portrait of Shahrooz Pouryousef" />
       <div>
         <h1>Shahrooz Pouryousef</h1>
         <div class="title">Research Scientist, Cisco Quantum Lab</div>
         <div class="meta">
           <span class="chip"><span>📧</span><a id="email" href="mailto:sh.pooryousef2@gmail.com">Email</a></span>
-          <!-- <span class="chip"><span>📍</span>Amherst, MA</span> -->
           <span class="chip"><a href="Shahrooz_CV.pdf">CV</a></span>
           <span class="chip"><a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a></span>
-          <!-- <span class="chip"><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></span> -->
           <span class="chip"><a href="https://github.com/pooryousefshahrooz" target="_blank" rel="noopener">GitHub</a></span>
+          <!-- Interests chips -->
+          <!-- <span class="chip">Distributed Training</span>
+          <span class="chip">Data-Center Networking</span>
+          <span class="chip">AI × Networking</span> -->
         </div>
       </div>
     </header>
@@ -69,8 +66,6 @@
       <a href="#pubs">Publications</a>
       <a href="#teaching">Teaching</a>
       <a href="#outreach">Service</a>
-      <!-- <a href="#news">News</a> -->
-      
     </div>
   </nav>
 
@@ -78,163 +73,172 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        I work on <strong>distributed quantum computing</strong>, <strong>quantum networking</strong>, and reliability/security of AI systems. My current focus is
-        <em>quantum data center architectures</em>, entanglement orchestration, and compiler/runtime co-design for fault-tolerant distributed execution.
-        Previously, I completed my Ph.D. at UMass Amherst (ACQUIRE Lab, advised by Don Towsley).
+        I work on <strong>networking</strong> and data-center systems—congestion control, load balancing, routing/traffic engineering—and I also build tools for
+        <strong>distributed quantum computing</strong> and quantum networking. My current interests include the <strong>AI × Networking</strong> seam:
+        understanding communication patterns in <em>distributed (decentralized) training</em> and how DCN transport and scheduling shape end-to-end performance.
+        I completed my Ph.D. at UMass Amherst (ACQUIRE Lab, advised by Don Towsley).
       </p>
       <p>
-        I welcome emails from motivated students and collaborators. If you are interested, please reach out with a short note on your background and interests.
+        <!-- I’m happy to connect with collaborators in DCN/transport, traffic engineering for ML workloads, and quantum networking. Feel free to email a short note on your background and interests. -->
       </p>
-      <!-- <div class="small muted">Announcements: recruiting collaborators on DQC schedulers &amp; RL-based partitioning • Preparing a survey on security of QML.</div> -->
     </section>
 
     <section id="research">
       <h2>Research Highlights</h2>
       <div class="grid">
         <div class="card">
-          <strong>Distributed Quantum Computing in Quantum Data Centers</strong>
-          <!-- <div class="small">Circuit partitioning, remote-gate scheduling, entanglement orchestration, and evaluation.</div> -->
+          <strong>Networking &amp; Data-Center Systems</strong>
+          <div class="small">Transport and traffic engineering; measurement and topology studies.</div>
           <ul>
-            <li>Distributed error correction</li>
-            <li>Circuit Partitioning with EPR generation scheduling.</li>
-            <li>Benchmarking Clos/BCube/QFly architecutres for distributed quantum computing.</li>
-            <!-- <li>Architectures: Clos/BCube/QFly with photonic switching</li> -->
-
+            <li>Congestion control (DCTCP/CUBIC concepts), ECN/AQM (RED/CoDel).</li>
+            <li>Load balancing (ECMP/flowlets) and routing/TE in Clos/leaf–spine topologies.</li>
+            <li>Topology studies; path diversity vs. blocking; measurement-driven evaluation.</li>
           </ul>
         </div>
+
         <div class="card">
-            <strong>Quantum Networking</strong>
-            <div class="small">Resource allocation and protocol analysis for entanglement distribution.</div>
-            <ul>
-              <li>Quantum network planning with Repeater placement and distillation/swap scheduling.</li>
-              <!-- <li>Asynchronous protocols, sequential‑swap repeater chains</li> -->
-              <li>Quantum storage networks</li>
-            </ul>
-          </div>
-          <div class="card">
-            <strong>Security & Privacy in QML</strong>
-            <div class="small">Adversarial robustness and privacy‑aware evaluation for quantum ML.</div>
-            <ul>
-              <li>Threat models for VQAs under noise and device constraints.</li>
-              <li>Defense strategies and robust evaluation protocols.</li>
-            </ul>
-          </div>
+          <strong>Networking for Distributed Training</strong>
+          <div class="small">AI × Networking: co-design signals for LLM training.</div>
+          <ul>
+            <li>Characterizing communication patterns in distributed/decentralized training (interest & ongoing work).</li>
+            <li>Benchmarking DCN topologies for AI-oriented workloads.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Distributed Quantum Computing in Quantum Data Centers</strong>
+          <ul>
+            <li>Circuit partitioning with EPR-generation scheduling.</li>
+            <li>Benchmarking architectures (Clos/BCube/QFly) for distributed quantum execution.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Quantum Networking</strong>
+          <div class="small">Resource allocation and protocol analysis for entanglement distribution.</div>
+          <ul>
+            <li>Network planning with repeater placement and distillation/swap scheduling.</li>
+            <li>Storage-constrained quantum networks.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Security &amp; Privacy in QML</strong>
+          <div class="small">Adversarial robustness and privacy-aware evaluation for quantum ML.</div>
+          <ul>
+            <li>Threat models for VQAs under noise and device constraints.</li>
+            <li>Robust evaluation protocols (NDSS submission under review).</li>
+          </ul>
+        </div>
       </div>
-      <!-- <p class="small muted">See <a href="#pubs">Publications</a> for papers and preprints.</p> -->
     </section>
+
     <section id="pubs">
-        <h2>Selected Publications</h2>
-        <ol>
-          <li>
-            <strong>Resource Allocation in Quantum Networks</strong> — PhD Thesis, UMass Amherst, 2025.
-          </li>
-          <li>
-            <strong>Fault Tolerant Distributed Quantum Computing in Quantum Data Centers</strong> — under submission, 2025.
-          </li>
-          <li>
-            <strong>Topology-Aware Dynamic Scheduling for Remote Gates</strong> — preprint arXiv:2504.20176, 2025.
-          </li>
-          <li><strong>Resource Placement for Rate and Fidelity Maximization in Quantum Networks</strong><br>
-            Shahrooz Pouryousef, Hassan Shapourian, Alireza Shabani, Ramana Kompella, Don Towsley — <em>IEEE Transactions on Quantum Engineering</em> (2024)
-            </li>
-            <li><strong>Analysis of Asynchronous Protocols for Entanglement Distribution in Quantum Networks</strong><br>
-            Shahrooz Pouryousef, Hassan Shapourian, Don Towsley — <em>International Conference on Quantum Communications, Networking, and Computing (QCNC)</em> (2024)
-            </li>
-            <li><strong>Scaling Limits of Quantum Repeater Networks</strong><br>
-            Mahdi Chehimi, Shahrooz Pouryousef, Nitish K. Panigrahy, Don Towsley, Walid Saad — <em>IEEE QCE</em> (Bellevue, WA, Sep 2023)
-            </li>
-            <li><strong>Resource Management in Quantum Virtual Private Networks</strong><br>
-            Shahrooz Pouryousef, Nitish K. Panigrahy, Monimoy Deb Purkayastha, Sabyasachi Mukhopadhyay, Gert Grammel, Domenico Di Mola, Don Towsley — <em>QCE’23 poster</em>
-            </li>
-            <li><strong>A Quantum Overlay Network for Efficient Entanglement Distribution</strong><br>
-            Shahrooz Pouryousef, Nitish K. Panigrahy, Don Towsley — <em>IEEE INFOCOM</em> (2023)
-            </li>
-            <li><strong>Towards Logically Centralized Interdomain Routing</strong><br>
-            Shahrooz Pouryousef, Lixin Gao, Arun Venkataramani — <em>USENIX NSDI</em> (2020)
-            </li>
-            <li><strong>Extortion or Expansion? An Investigation into the Costs and Consequences of ICANN’s gTLD Experiments</strong><br>
-            Shahrooz Pouryousef, Muhammad Daniyal Dar, Suleman Ahmad, Phillipa Gill, Rishab Nithyanand — <em>Passive and Active Measurement (PAM)</em> (2020)
-            </li>
-        </ol>
-        <p class="small muted">Full list on <a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>.</p>
-      </section>
+      <h2>Selected Publications</h2>
+      <ol>
+        <!-- Networking up front -->
+        <li>
+          <strong>Towards Logically Centralized Interdomain Routing</strong><br>
+          Shahrooz Pouryousef, Lixin Gao, Arun Venkataramani — <em>USENIX NSDI</em> (2020)
+        </li>
+        <li>
+          <strong>Extortion or Expansion? An Investigation into the Costs and Consequences of ICANN’s gTLD Experiments</strong><br>
+          Shahrooz Pouryousef, Muhammad Daniyal Dar, Suleman Ahmad, Phillipa Gill, Rishab Nithyanand — <em>PAM</em> (2020)
+        </li>
+
+        <!-- Quantum / distributed systems -->
+        <li>
+          <strong>Resource Allocation in Quantum Networks</strong> — PhD Thesis, UMass Amherst, 2025.
+        </li>
+        <li>
+          <strong>Fault-Tolerant Distributed Quantum Computing in Quantum Data Centers</strong> — under submission, 2025.
+        </li>
+        <li>
+          <strong>Topology-Aware Dynamic Scheduling for Remote Gates</strong> — preprint arXiv:2504.20176, 2025.
+        </li>
+        <li>
+          <strong>Resource Placement for Rate and Fidelity Maximization in Quantum Networks</strong><br>
+          Shahrooz Pouryousef, Hassan Shapourian, Alireza Shabani, Ramana Kompella, Don Towsley — <em>IEEE TQE</em> (2024)
+        </li>
+        <li>
+          <strong>Analysis of Asynchronous Protocols for Entanglement Distribution in Quantum Networks</strong><br>
+          Shahrooz Pouryousef, Hassan Shapourian, Don Towsley — <em>QCNC</em> (2024)
+        </li>
+        <li>
+          <strong>Scaling Limits of Quantum Repeater Networks</strong><br>
+          Mahdi Chehimi, Shahrooz Pouryousef, Nitish K. Panigrahy, Don Towsley, Walid Saad — <em>IEEE QCE</em> (2023)
+        </li>
+        <li>
+          <strong>Resource Management in Quantum Virtual Private Networks</strong><br>
+          Shahrooz Pouryousef, Nitish K. Panigrahy, Monimoy Deb Purkayastha, Sabyasachi Mukhopadhyay, Gert Grammel, Domenico Di Mola, Don Towsley — <em>QCE’23 poster</em>
+        </li>
+        <li>
+          <strong>A Quantum Overlay Network for Efficient Entanglement Distribution</strong><br>
+          Shahrooz Pouryousef, Nitish K. Panigrahy, Don Towsley — <em>IEEE INFOCOM</em> (2023)
+        </li>
+      </ol>
+      <p class="small muted">Full list on <a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    </section>
+
     <section id="teaching">
       <h2>Teaching</h2>
       <ul>
-        <li>Instructor — First-year undergrad seminar on exploring modern computing. Fall. 2023
-            </li>
-        <li> Instructor — An introduction to computer programming (CICS 110). Fall 2024</li>
-        <li>Seminar — Distributed Quantum computing, FA'25.</li>
+        <li>Instructor — First-year undergrad seminar on exploring modern computing (Fall 2023)</li>
+        <li>Instructor — Introduction to Computer Programming (CICS 110) (Fall 2024)</li>
+        <li>Seminar — Distributed Quantum Computing (Fall 2025)</li>
       </ul>
     </section>
 
     <section id="outreach">
-        <h2>Outreach &amp; Professional Services</h2>
-        <div class="grid">
+      <h2>Outreach &amp; Professional Services</h2>
+      <div class="grid">
         <div class="card">
-        <strong>Graduate student representative (2022–2023)</strong>
-        <ul>
-        <li>Represented graduate student interests to the department, faculty, and administration.</li>
-        <li>Participated in departmental meetings, committees, and councils to bring the graduate perspective into decisions.</li>
-        <li>Interviewed faculty candidates for tenure‑track positions.</li>
-        </ul>
-        </div>
-        <div class="card">
-        <strong>CQN SLC industry officer (2022)</strong>
-        <ul>
-        <li>Organized Center for Quantum Networks (CQN) events to foster community.</li>
-        </ul>
+          <strong>Graduate student representative (2022–2023)</strong>
+          <ul>
+            <li>Represented graduate student interests to department and administration.</li>
+            <li>Interviewed faculty candidates for tenure-track positions.</li>
+          </ul>
         </div>
         <div class="card">
-        <strong>PASP program committee member</strong>
-        <ul>
-        <li>Member of the PhD Applicants Support Program (PASP) helping applicants from underrepresented groups improve application materials.</li>
-        </ul>
+          <strong>CQN SLC industry officer (2022)</strong>
+          <ul>
+            <li>Organized Center for Quantum Networks events to foster community.</li>
+          </ul>
         </div>
         <div class="card">
-        <strong>CICS social committee member</strong>
+          <strong>PASP program committee member</strong>
+          <ul>
+            <li>PhD Applicants Support Program: helped applicants refine materials.</li>
+          </ul>
         </div>
         <div class="card">
-        <strong>Peer Reviewing</strong>
-        <ul>
-        <li>IEEE Transactions on Networking (ToN), 2022</li>
-        <li>IEEE ICC, 2023</li>
-        </ul>
+          <strong>CICS social committee member</strong>
         </div>
+        <div class="card">
+          <strong>Peer Reviewing</strong>
+          <ul>
+            <li>IEEE Transactions on Networking (ToN), 2022</li>
+            <li>IEEE ICC, 2023</li>
+          </ul>
         </div>
-        </section>
-
-    <!-- <section id="news">
-      <h2>Recent News</h2>
-      <ul class="news">
-        <li><strong>Sept 2025</strong> — Preparing dissertation chapter on QDC architectures; new preprint forthcoming.</li>
-        <li><strong>Jun 2025</strong> — Joined Cisco as Research Scientist (Quantum Data Centers).</li>
-        <li><strong>May 2025</strong> — Two invited talks on DQC schedulers and QML security.</li>
-      </ul>
-    </section> -->
-
-    
-
-    <!-- <section id="cv">
-      <h2>CV</h2>
-      <p>Download a one-page CV: <a class="btn" href="Shahrooz_Pouryousef_CV.pdf">PDF</a> <span class="muted">(last updated: Sept 10, 2025)</span></p>
-    </section> -->
+      </div>
+    </section>
 
     <footer>
-      Shahrooz Pouryousef • Last updated Sept 10, 2025 · <span class="nowrap"><a href="#about">Back to top ↑</a></span>
+      Shahrooz Pouryousef • Last updated Sept 10, 2025 · <span class="nowrap"><a href="#about">Back to top ↑</a></span>
     </footer>
   </main>
 
   <script>
-    // Optional: click-to-copy email
+    // click-to-copy email
     const email = document.getElementById('email');
     if(email){
-      email.addEventListener('click', function(e){
+      email.addEventListener('click', function(){
         try{
-          navigator.clipboard.writeText(this.textContent.trim());
-          this.textContent = this.textContent.trim() + ' ✓ copied';
-          setTimeout(()=>{ this.textContent = this.href.replace('mailto:',''); }, 1500);
-        }catch(err){ /* ignore */ }
+          navigator.clipboard.writeText(this.href.replace('mailto:',''));
+          this.textContent = 'Email ✓ copied';
+          setTimeout(()=>{ this.textContent = 'Email'; }, 1500);
+        }catch(err){}
       });
     }
   </script>
