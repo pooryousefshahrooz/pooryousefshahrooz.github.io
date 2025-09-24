@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shahrooz Pouryousef</title>
-  <meta name="description" content="Shahrooz Pouryousef — networking, data-center networking, AI × Networking for distributed training; plus distributed quantum computing and quantum networking." />
+  <meta name="description" content="Shahrooz Pouryousef — networking, data-center networking (DCN), and the AI × Networking seam for distributed training; plus distributed quantum computing and quantum networking." />
   <style>
     :root{ --bg:#ffffff; --fg:#111111; --muted:#6b7280; --link:#2563eb; --chip:#f3f4f6; --card:#fafafa; --border:#e5e7eb; }
     @media (prefers-color-scheme: dark) {
@@ -44,16 +44,15 @@
       <img class="portrait" src="shahrooz_qce.jpeg" alt="Portrait of Shahrooz Pouryousef" />
       <div>
         <h1>Shahrooz Pouryousef</h1>
-        <div class="title">Research Scientist, Cisco Quantum Lab</div>
+        <div class="title">Research Scientist, Cisco</div>
         <div class="meta">
           <span class="chip"><span>📧</span><a id="email" href="mailto:sh.pooryousef2@gmail.com">Email</a></span>
           <span class="chip"><a href="Shahrooz_CV.pdf">CV</a></span>
-          <span class="chip"><a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a></span>
+          <!-- <span class="chip"><a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a></span> -->
           <span class="chip"><a href="https://github.com/pooryousefshahrooz" target="_blank" rel="noopener">GitHub</a></span>
-          <!-- Interests chips -->
-          <!-- <span class="chip">Distributed Training</span>
+          <!-- <span class="chip">Networking</span>
           <span class="chip">Data-Center Networking</span>
-          <span class="chip">AI × Networking</span> -->
+          <span class="chip">AI × Networking (Distributed Training)</span> -->
         </div>
       </div>
     </header>
@@ -63,6 +62,7 @@
     <div class="wrap">
       <a href="#about">About</a>
       <a href="#research">Research</a>
+      <a href="#exp">Experience</a>
       <a href="#pubs">Publications</a>
       <a href="#teaching">Teaching</a>
       <a href="#outreach">Service</a>
@@ -73,13 +73,10 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        I work on <strong>networking</strong> and data-center systems—congestion control, load balancing, routing/traffic engineering—and I also build tools for
-        <strong>distributed quantum computing</strong> and quantum networking. My current interests include the <strong>AI × Networking</strong> seam:
-        understanding communication patterns in <em>distributed (decentralized) training</em> and how DCN transport and scheduling shape end-to-end performance.
-        I completed my Ph.D. at UMass Amherst (ACQUIRE Lab, advised by Don Towsley).
-      </p>
-      <p>
-        <!-- I’m happy to connect with collaborators in DCN/transport, traffic engineering for ML workloads, and quantum networking. Feel free to email a short note on your background and interests. -->
+        I work on <strong>networking</strong> and data-center systems—congestion control, ECN/AQM, load balancing, routing/TE—and build
+        measurement-driven studies and event-driven simulators (ns-3/OMNeT++/SimPy/Python). My current focus is the <strong>AI × Networking</strong> seam:
+        understanding communication patterns in <em>distributed / decentralized training</em> (DDP, micro-batching, tail latency) and how DCN transport
+        and scheduling shape end-to-end performance. I completed my Ph.D. at UMass Amherst (ACQUIRE Lab, honored and fortunate to have been advised by <strong> <a href="https://scholar.google.com/citations?user=KIFPVWoAAAAJ&hl=en&oi=ao">Prof. Don Towsley </a> </strong> during my Ph.D.).
       </p>
     </section>
 
@@ -90,26 +87,26 @@
           <strong>Networking &amp; Data-Center Systems</strong>
           <div class="small">Transport and traffic engineering; measurement and topology studies.</div>
           <ul>
-            <li>Congestion control (DCTCP/CUBIC concepts), ECN/AQM (RED/CoDel).</li>
-            <li>Load balancing (ECMP/flowlets) and routing/TE in Clos/leaf–spine topologies.</li>
+            <li>Congestion control (TCP/DCTCP/CUBIC concepts), ECN/AQM (RED/CoDel).</li>
+            <li>Load balancing (ECMP/flowlets) and routing/TE in Clos/BCube/leaf–spine.</li>
             <li>Topology studies; path diversity vs. blocking; measurement-driven evaluation.</li>
           </ul>
         </div>
 
         <div class="card">
           <strong>Networking for Distributed Training</strong>
-          <div class="small">AI × Networking: co-design signals for LLM training.</div>
+          <div class="small">AI × Networking for LLM-style workloads.</div>
           <ul>
-            <li>Characterizing communication patterns in distributed/decentralized training (interest & ongoing work).</li>
-            <li>Benchmarking DCN topologies for AI-oriented workloads.</li>
+            <li>Characterizing comm patterns in distributed/decentralized training (ongoing work).</li>
+            <li>Benchmarking DCN topologies for AI-oriented workloads and step-time sensitivity.</li>
           </ul>
         </div>
 
         <div class="card">
-          <strong>Distributed Quantum Computing in Quantum Data Centers</strong>
+          <strong>Distributed Quantum Computing in Data Centers</strong>
           <ul>
-            <li>Circuit partitioning with EPR-generation scheduling.</li>
-            <li>Benchmarking architectures (Clos/BCube/QFly) for distributed quantum execution.</li>
+            <li>Orchestration &amp; windowed partitioning for remote-op heavy circuits.</li>
+            <li>Benchmarking architectures (Clos/BCube/QFly) and fabric-contention effects.</li>
           </ul>
         </div>
 
@@ -117,17 +114,35 @@
           <strong>Quantum Networking</strong>
           <div class="small">Resource allocation and protocol analysis for entanglement distribution.</div>
           <ul>
-            <li>Network planning with repeater placement and distillation/swap scheduling.</li>
-            <li>Storage-constrained quantum networks.</li>
+            <li>Planning with repeater placement; distillation/swap scheduling; storage constraints.</li>
           </ul>
         </div>
+      </div>
+    </section>
 
+    <section id="exp">
+      <h2>Experience</h2>
+      <div class="grid">
         <div class="card">
-          <strong>Security &amp; Privacy in QML</strong>
-          <div class="small">Adversarial robustness and privacy-aware evaluation for quantum ML.</div>
+          <strong>Cisco — Research Scientist (Networking for Distributed Systems)</strong>
+          <div class="small">2025–Present</div>
           <ul>
-            <li>Threat models for VQAs under noise and device constraints.</li>
-            <li>Robust evaluation protocols (NDSS submission under review).</li>
+            <li>Topology-aware DCN benchmarking and event-driven simulation for communication-bound workloads (methods generalize to LLM training).</li>
+            <li>Scheduler-centric performance analysis; reproducible parameter sweeps and reports.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>ByteDance — Research Intern (Traffic Engineering)</strong>
+          <div class="small">2021</div>
+          <ul>
+            <li>Prototyped RL-based traffic engineering to improve link utilization vs. an ECMP baseline in Python simulation; evaluated tail FCT and fairness.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Cisco — Research Intern (Quantum Networking)</strong>
+          <div class="small">2024</div>
+          <ul>
+            <li>Performance analysis of quantum protocols using a SimPy event-driven simulator; parameter sweeps and standardized figures.</li>
           </ul>
         </div>
       </div>
@@ -142,19 +157,13 @@
           Shahrooz Pouryousef, Lixin Gao, Arun Venkataramani — <em>USENIX NSDI</em> (2020)
         </li>
         <li>
-          <strong>Extortion or Expansion? An Investigation into the Costs and Consequences of ICANN’s gTLD Experiments</strong><br>
-          Shahrooz Pouryousef, Muhammad Daniyal Dar, Suleman Ahmad, Phillipa Gill, Rishab Nithyanand — <em>PAM</em> (2020)
+          <strong>Do LLMs Understand Collaborative Signals? Diagnosis and Repair</strong><br>
+          Shahrooz Pouryousef <em>et&nbsp;al.</em> — <em>CIKM</em> (2025). <a href="https://arxiv.org/pdf/2505.20730" target="_blank" rel="noopener">arXiv</a>
         </li>
 
         <!-- Quantum / distributed systems -->
         <li>
           <strong>Resource Allocation in Quantum Networks</strong> — PhD Thesis, UMass Amherst, 2025.
-        </li>
-        <li>
-          <strong>Fault-Tolerant Distributed Quantum Computing in Quantum Data Centers</strong> — under submission, 2025.
-        </li>
-        <li>
-          <strong>Topology-Aware Dynamic Scheduling for Remote Gates</strong> — preprint arXiv:2504.20176, 2025.
         </li>
         <li>
           <strong>Resource Placement for Rate and Fidelity Maximization in Quantum Networks</strong><br>
@@ -165,19 +174,15 @@
           Shahrooz Pouryousef, Hassan Shapourian, Don Towsley — <em>QCNC</em> (2024)
         </li>
         <li>
-          <strong>Scaling Limits of Quantum Repeater Networks</strong><br>
-          Mahdi Chehimi, Shahrooz Pouryousef, Nitish K. Panigrahy, Don Towsley, Walid Saad — <em>IEEE QCE</em> (2023)
-        </li>
-        <li>
-          <strong>Resource Management in Quantum Virtual Private Networks</strong><br>
-          Shahrooz Pouryousef, Nitish K. Panigrahy, Monimoy Deb Purkayastha, Sabyasachi Mukhopadhyay, Gert Grammel, Domenico Di Mola, Don Towsley — <em>QCE’23 poster</em>
-        </li>
-        <li>
           <strong>A Quantum Overlay Network for Efficient Entanglement Distribution</strong><br>
           Shahrooz Pouryousef, Nitish K. Panigrahy, Don Towsley — <em>IEEE INFOCOM</em> (2023)
         </li>
+        <li>
+          <strong>Extortion or Expansion? Costs and Consequences of ICANN’s gTLD Experiments</strong><br>
+          Shahrooz Pouryousef, Muhammad Daniyal Dar, Suleman Ahmad, Phillipa Gill, Rishab Nithyanand — <em>PAM</em> (2020)
+        </li>
       </ol>
-      <p class="small muted">Full list on <a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      <!-- <p class="small muted">Full list on <a href="https://scholar.google.com/citations?user=DcgrszUAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>.</p> -->
     </section>
 
     <section id="teaching">
@@ -190,42 +195,27 @@
     </section>
 
     <section id="outreach">
-      <h2>Outreach &amp; Professional Services</h2>
+      <h2>Service</h2>
       <div class="grid">
         <div class="card">
-          <strong>Graduate student representative (2022–2023)</strong>
+          <strong>Reviewer / Community</strong>
           <ul>
-            <li>Represented graduate student interests to department and administration.</li>
-            <li>Interviewed faculty candidates for tenure-track positions.</li>
+            <li>IEEE Transactions on Networking (ToN), 2022; IEEE ICC, 2023</li>
           </ul>
         </div>
         <div class="card">
-          <strong>CQN SLC industry officer (2022)</strong>
+          <strong>Leadership &amp; Programs</strong>
           <ul>
-            <li>Organized Center for Quantum Networks events to foster community.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <strong>PASP program committee member</strong>
-          <ul>
-            <li>PhD Applicants Support Program: helped applicants refine materials.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <strong>CICS social committee member</strong>
-        </div>
-        <div class="card">
-          <strong>Peer Reviewing</strong>
-          <ul>
-            <li>IEEE Transactions on Networking (ToN), 2022</li>
-            <li>IEEE ICC, 2023</li>
+            <li>Graduate student representative (2022–2023)</li>
+            <li>CQN SLC industry officer (2022)</li>
+            <li>PASP program committee member</li>
           </ul>
         </div>
       </div>
     </section>
 
     <footer>
-      Shahrooz Pouryousef • Last updated Sept 10, 2025 · <span class="nowrap"><a href="#about">Back to top ↑</a></span>
+      Shahrooz Pouryousef • Last updated Sept 24, 2025 · <span class="nowrap"><a href="#about">Back to top ↑</a></span>
     </footer>
   </main>
 
