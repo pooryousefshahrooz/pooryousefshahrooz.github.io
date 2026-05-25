@@ -180,6 +180,18 @@ h2 {
 
 .bio-p strong { color: var(--text); font-weight: 600; }
 
+.research-interests {
+  font-size: 13.5px;
+  color: var(--text-2);
+  line-height: 1.45;
+  margin-bottom: .45rem;
+}
+
+.research-interests::first-line {
+  color: var(--text);
+  font-weight: 500;
+}
+
 .research-focus {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
