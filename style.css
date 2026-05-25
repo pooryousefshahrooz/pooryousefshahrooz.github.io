@@ -19,7 +19,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text);
   background: var(--bg);
-  line-height: 1.7;
+  line-height: 1.55;
   font-size: 15px;
 }
 
@@ -79,7 +79,7 @@ main {
 
 /* ── Sections ── */
 section {
-  padding: 3.5rem 0;
+  padding: 2.1rem 0;
   border-bottom: 1px solid var(--border);
 }
 section:last-child { border-bottom: none; }
@@ -90,7 +90,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-2);
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 /* ── About ── */
@@ -174,8 +174,8 @@ h2 {
 .bio-p {
   font-size: 14.5px;
   color: var(--text-2);
-  line-height: 1.8;
-  margin-bottom: .85rem;
+  line-height: 1.65;
+  margin-bottom: .65rem;
 }
 
 .bio-p strong { color: var(--text); font-weight: 600; }
@@ -207,8 +207,8 @@ h2 {
 .research-focus {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: .75rem;
-  margin-top: 1.15rem;
+  gap: .6rem;
+  margin-top: .9rem;
 }
 
 .focus-item {
@@ -216,7 +216,7 @@ h2 {
   align-items: center;
   gap: .55rem;
   min-width: 0;
-  padding: .65rem;
+  padding: .55rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--bg-subtle);
@@ -244,11 +244,11 @@ h2 {
   display: flex;
   gap: 1.25rem;
   align-items: baseline;
-  padding: .65rem 0;
+  padding: .45rem 0;
   border-bottom: 1px solid var(--border);
   font-size: 14px;
   color: var(--text-2);
-  line-height: 1.65;
+  line-height: 1.5;
 }
 
 .news-list li:last-child { border-bottom: none; }
@@ -272,7 +272,7 @@ h2 {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
-  padding: 1.25rem 0;
+  padding: .9rem 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -292,8 +292,8 @@ h2 {
   font-size: 14.5px;
   font-weight: 600;
   color: var(--text);
-  margin-bottom: .25rem;
-  line-height: 1.5;
+  margin-bottom: .15rem;
+  line-height: 1.35;
 }
 
 .pauth {
@@ -306,7 +306,7 @@ h2 {
   font-size: 12.5px;
   color: var(--text-2);
   font-style: italic;
-  margin-bottom: .55rem;
+  margin-bottom: .4rem;
 }
 
 .award {
@@ -345,10 +345,10 @@ h2 {
 /* ── Experience & Service ── */
 .section-intro {
   max-width: 680px;
-  margin: -.65rem 0 1rem;
+  margin: -.35rem 0 .7rem;
   font-size: 14px;
   color: var(--text-2);
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .exp-list {
@@ -357,7 +357,7 @@ h2 {
 }
 
 .exp-item {
-  padding: 1.15rem 0;
+  padding: .85rem 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -387,7 +387,7 @@ h2 {
 }
 
 .exp-group {
-  margin-top: .65rem;
+  margin-top: .45rem;
 }
 
 .exp-role {
@@ -404,8 +404,8 @@ h2 {
 
 .exp-item li {
   font-size: 14px;
-  line-height: 1.65;
-  margin-bottom: .2rem;
+  line-height: 1.5;
+  margin-bottom: .12rem;
 }
 
 .exp-item li:last-child { margin-bottom: 0; }
@@ -413,7 +413,7 @@ h2 {
 /* ── Footer ── */
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 1.4rem 2rem;
   color: var(--text-2);
   font-size: 13px;
   border-top: 1px solid var(--border);
