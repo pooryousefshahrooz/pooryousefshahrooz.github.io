@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <rect width="80" height="80" rx="16" fill="#d97706"/>
+  <!-- Globe outline -->
+  <circle cx="40" cy="40" r="24" fill="none" stroke="white" stroke-width="2.2" opacity="0.92"/>
+  <!-- Equator -->
+  <line x1="16" y1="40" x2="64" y2="40" stroke="white" stroke-width="1.8" opacity="0.6"/>
+  <!-- Central meridian -->
+  <line x1="40" y1="16" x2="40" y2="64" stroke="white" stroke-width="1.8" opacity="0.6"/>
+  <!-- Latitude lines -->
+  <path d="M20 28 Q40 21 60 28" fill="none" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <path d="M20 52 Q40 59 60 52" fill="none" stroke="white" stroke-width="1.5" opacity="0.5"/>
+</svg>

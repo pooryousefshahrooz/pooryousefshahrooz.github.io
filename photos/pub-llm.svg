@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <rect width="80" height="80" rx="16" fill="#6d28d9"/>
+  <!-- Chat bubble 1 (main) -->
+  <rect x="10" y="16" width="42" height="27" rx="6" fill="white" opacity="0.92"/>
+  <polygon points="20,43 14,55 30,43" fill="white" opacity="0.92"/>
+  <!-- Chat bubble 2 (reply, offset) -->
+  <rect x="28" y="37" width="38" height="22" rx="6" fill="white" opacity="0.55"/>
+  <!-- Dots inside bubble 1 -->
+  <circle cx="22" cy="29" r="3.2" fill="#6d28d9" opacity="0.6"/>
+  <circle cx="31" cy="29" r="3.2" fill="#6d28d9" opacity="0.6"/>
+  <circle cx="40" cy="29" r="3.2" fill="#6d28d9" opacity="0.6"/>
+</svg>

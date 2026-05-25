@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <rect width="80" height="80" rx="16" fill="#059669"/>
+  <!-- Axes -->
+  <line x1="14" y1="12" x2="14" y2="66" stroke="white" stroke-width="1.8" opacity="0.45" stroke-linecap="round"/>
+  <line x1="14" y1="66" x2="68" y2="66" stroke="white" stroke-width="1.8" opacity="0.45" stroke-linecap="round"/>
+  <!-- Upward reward curve -->
+  <path d="M14 62 C26 60 30 50 38 40 C46 30 54 22 68 16"
+        fill="none" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.92"/>
+  <!-- Arrow head -->
+  <polygon points="68,16 60,18 64,26" fill="white" opacity="0.9"/>
+  <!-- Dot on curve -->
+  <circle cx="38" cy="40" r="4.5" fill="white" opacity="0.85"/>
+</svg>

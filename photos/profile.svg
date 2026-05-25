@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circ"><circle cx="100" cy="100" r="100"/></clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="#dbeafe"/>
+  <circle cx="100" cy="80" r="36" fill="#93c5fd" clip-path="url(#circ)"/>
+  <ellipse cx="100" cy="175" rx="62" ry="48" fill="#93c5fd" clip-path="url(#circ)"/>
+  <!-- Initials overlay as fallback label -->
+  <text x="100" y="108" text-anchor="middle" dominant-baseline="middle"
+        font-family="Inter,system-ui,sans-serif" font-size="42" font-weight="700"
+        fill="#1e40af" opacity="0.15">SP</text>
+</svg>
