@@ -365,6 +365,29 @@ h2 {
 }
 
 /* ── Publications ── */
+.pub-more { margin-top: .4rem; }
+
+.pub-more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent);
+  padding: .35rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-subtle);
+}
+
+.pub-more summary::-webkit-details-marker { display: none; }
+.pub-more summary::after { content: "\25BE"; font-size: 11px; }
+.pub-more[open] summary::after { content: "\25B4"; }
+.pub-more summary:hover { background: var(--accent-bg); }
+.pub-more[open] summary { margin-bottom: .4rem; }
+
 .pub-list {
   display: flex;
   flex-direction: column;
