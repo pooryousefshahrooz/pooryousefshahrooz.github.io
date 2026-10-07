@@ -294,10 +294,24 @@ h2 {
 
 .research-focus {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .45rem;
   margin-top: .65rem;
 }
+
+.research-threads {
+  margin: .2rem 0 .7rem 1.1rem;
+  padding: 0;
+}
+
+.research-threads li {
+  font-size: 14.5px;
+  margin-bottom: .35rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.research-threads strong { color: var(--text); font-weight: 600; }
 
 .focus-item {
   display: flex;
