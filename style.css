@@ -12,8 +12,8 @@
   --accent:     #2563eb;
   --accent-bg:  #eff6ff;
   --accent-bd:  #bfdbfe;
-  --max:        1180px;
-  --side:       330px;
+  --max:        1040px;
+  --side:       310px;
 }
 
 html { scroll-behavior: smooth; }
