@@ -280,5 +280,4 @@ footer a { color: var(--text-2); }
   .photo { margin: 0 auto; width: 170px; height: 215px; }
   .id h1 { margin-top: 0; font-size: 1.6rem; }
   .contact { text-align: left; }
-  .exp-head { flex-direction: column; gap: .1rem; }
 }
