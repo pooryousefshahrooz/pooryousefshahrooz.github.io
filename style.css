@@ -238,7 +238,7 @@ a:hover { text-decoration: underline; }
 
 .venue { color: var(--text-2); font-style: italic; }
 
-.award { color: #b45309; font-weight: 700; }
+.award { color: #c0392b; font-weight: 700; }
 
 .pub-more summary {
   cursor: pointer;
